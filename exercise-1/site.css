@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+ 
+}
+
+body {
+  background: url(image/home1-banner-img.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 100px;
+}
+
+.container .name {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(49, 49 ,49);
+}
+
+.name span {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.connect {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.connect-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.connect-title .right-arrow {
+  width: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 40px;
+}
+
+
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background-color: rgb(79, 104, 74);
+  border-radius: 50px;
+  padding: 10px;
+  
+}
+
+.content {
+  margin: auto 100px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.discount {
+  color: rgb(49, 49 ,49);
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Marcellus", serif; 
+  margin-top: 100px;
+  margin-bottom: 8px;
+}
+
+.description {
+  color: rgb(49, 49 ,49);
+  font-size: 46px;
+  font-family: "Marcellus", serif; 
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 8px;
+}
+
+.description .banner-rectangle-img {
+  vertical-align: middle;
+  width: 164px;
+  border-radius: 20px;
+}
+
+.description .single-leaf {
+  vertical-align: middle;
+  width: 64px;
+}
+
+.para {
+  width: 500px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(114, 113, 113);
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.shop-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 35px;
+  background-color: rgb(52, 83, 51);
+  border-radius: 20px;
+  border: none;
+}
+
+.shop-btn img {
+  height: 10px;
+}
+
+.last {
+  display: flex;
+  align-items:center ;
+  justify-content: space-evenly;
+}
+
+.user {
+  display: inline;
+  margin-right: 20px ;
+  margin-left: 30px;
+  font-family: "Marcellus";
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(26, 24, 24);
+}
+
+.user p {
+  color: rgb(104, 103, 103);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.pipe {
+  display: inline;
+  color: rgb(221, 216, 210);
+  margin-right: 20px;
+  margin-bottom: 5px;
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.products {
+  display: inline;
+  font-family: "Marcellus";
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(26, 24, 24);
+}
+
+.products p {
+  color: rgb(104, 103, 103);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.picture-section img {
+  width: 650px;
+  vertical-align: middle;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar .close-btn {
+  background-color: #4a5f38;
+  color: white;
+  padding: 10px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #f0f0f0;
+}
+
+.hamburger {
+  font-size: 30px;
+  padding: 15px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right:0;
+  display: none;
+}
+
+
+@media (max-width : 991px) {
+  .menu  , .connect-title , .none{
+    display: none;
+  }
+
+  .name {
+    display: block;
+    width: 200px;
+  }
+
+  .serach-icon-new , 
+  .cart-icon {
+    display:flex;
+    flex: 1;
+    width: 200px;
+
+  }
+}
+
+
+
+/* font-family: "Marcellus", serif; *
